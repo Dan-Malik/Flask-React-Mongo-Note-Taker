@@ -17,7 +17,7 @@ data = {'mongo_uri':'mongo_connection_string_goes_here'}
 
 Ensure you have the proper python modules installed by running the following pip command:
 ```
-pip install -r requirements.txt
+pip install -r dependencies.txt
 ```
 
 ## Deployment
