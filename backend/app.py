@@ -1,9 +1,11 @@
 from flask import Flask, request, jsonify, abort
+from flask_cors import CORS
 from bson.objectid import ObjectId
 from pymongo.collection import ReturnDocument
 import pymongo, datetime, credentials, json
 
 app = Flask(__name__)
+CORS(app)
 client = pymongo.MongoClient(credentials.data['mongo_uri'])
 db = client.note_db
 collection = db.notes
@@ -58,4 +60,4 @@ def get_note(note_id):
 			abort(404)
 
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run(debug = False)

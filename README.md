@@ -17,12 +17,28 @@ data = {'mongo_uri':'mongo_connection_string_goes_here'}
 
 Ensure you have the proper python modules installed by running the following pip command:
 ```
-pip install -r dependencies.txt
+pip install -r requirements.txt
 ```
+
+In the frontend directory, install nodejs modules with:
+```
+npm install
+```
+
 
 ## Deployment
 
 Start up the backend by running the following command:
 ```
 python app.py
+```
+
+Deploy the frontend for production with:
+```
+npm run build
+```
+
+Or in development move with:
+```
+npm start
 ```
