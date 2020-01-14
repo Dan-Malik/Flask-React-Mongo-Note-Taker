@@ -1,8 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import { Row, Col, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-
 
 export default class NoteList extends React.Component {
 
